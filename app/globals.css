@@ -9,12 +9,17 @@
   }
 
   body {
-    @apply bg-slate-50 text-slate-900;
+    @apply bg-cream-50 text-warm-900;
+    font-family: var(--font-nunito), system-ui, sans-serif;
     -webkit-font-smoothing: antialiased;
   }
 
+  h1, h2, h3, h4 {
+    font-family: var(--font-lora), Georgia, serif;
+  }
+
   :focus-visible {
-    @apply outline-2 outline-offset-2 outline-blue-600;
+    @apply outline-2 outline-offset-2 outline-terra-500;
   }
 }
 

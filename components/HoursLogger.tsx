@@ -86,18 +86,18 @@ export default function HoursLogger() {
   const hsHours = logs.filter(l => l.creditType === 'high-school').reduce((s, l) => s + l.hours, 0);
 
   const inputClass = (field: string) =>
-    `w-full border-2 rounded-xl px-4 py-3 text-base text-slate-900 focus:outline-none focus:ring-2 focus:ring-blue-500 ${errors[field] ? 'border-red-500' : 'border-slate-300'}`;
+    `w-full border-2 rounded-xl px-4 py-3 text-base text-warm-900 focus:outline-none focus:ring-2 focus:ring-terra-400 ${errors[field] ? 'border-red-400' : 'border-warm-300'}`;
 
   return (
     <div className="space-y-10">
       {/* Form */}
       <section aria-labelledby="log-form-title">
-        <h2 id="log-form-title" className="text-2xl font-bold text-slate-900 mb-6">{tr.hours.form.title}</h2>
+        <h2 id="log-form-title" className="text-2xl font-bold text-warm-900 mb-6">{tr.hours.form.title}</h2>
 
-        <form onSubmit={handleSubmit} noValidate className="bg-white rounded-2xl shadow-md border border-slate-200 p-6 space-y-5">
+        <form onSubmit={handleSubmit} noValidate className="bg-white rounded-2xl shadow-md border border-warm-200 p-6 space-y-5">
           {/* Credit type */}
           <div>
-            <p className="text-base font-semibold text-slate-700 mb-2">{tr.hours.form.creditType}</p>
+            <p className="text-base font-semibold text-warm-700 mb-2">{tr.hours.form.creditType}</p>
             <div className="flex gap-4">
               {(['general', 'high-school'] as const).map(type => (
                 <label key={type} className="flex items-center gap-2 cursor-pointer">
@@ -109,7 +109,7 @@ export default function HoursLogger() {
                     onChange={() => setCreditType(type)}
                     className="w-5 h-5 text-blue-600"
                   />
-                  <span className="text-base font-medium text-slate-800">
+                  <span className="text-base font-medium text-warm-800">
                     {type === 'high-school' ? `🎓 ${tr.hours.form.highSchool}` : `📋 ${tr.hours.form.general}`}
                   </span>
                 </label>
@@ -124,7 +124,7 @@ export default function HoursLogger() {
 
           {/* Organization */}
           <div>
-            <label htmlFor="log-org" className="block text-base font-semibold text-slate-700 mb-1">
+            <label htmlFor="log-org" className="block text-base font-semibold text-warm-700 mb-1">
               {tr.hours.form.org} <span className="text-red-600">*</span>
             </label>
             <select
@@ -154,7 +154,7 @@ export default function HoursLogger() {
           {/* Date and Hours (side by side on larger screens) */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
-              <label htmlFor="log-date" className="block text-base font-semibold text-slate-700 mb-1">
+              <label htmlFor="log-date" className="block text-base font-semibold text-warm-700 mb-1">
                 {tr.hours.form.date} <span className="text-red-600">*</span>
               </label>
               <input
@@ -168,7 +168,7 @@ export default function HoursLogger() {
               {errors.date && <p className="text-red-600 text-sm mt-1">{errors.date}</p>}
             </div>
             <div>
-              <label htmlFor="log-hours" className="block text-base font-semibold text-slate-700 mb-1">
+              <label htmlFor="log-hours" className="block text-base font-semibold text-warm-700 mb-1">
                 {tr.hours.form.hours} <span className="text-red-600">*</span>
               </label>
               <input
@@ -188,7 +188,7 @@ export default function HoursLogger() {
 
           {/* Description */}
           <div>
-            <label htmlFor="log-desc" className="block text-base font-semibold text-slate-700 mb-1">
+            <label htmlFor="log-desc" className="block text-base font-semibold text-warm-700 mb-1">
               {tr.hours.form.description} <span className="text-red-600">*</span>
             </label>
             <textarea
@@ -205,7 +205,7 @@ export default function HoursLogger() {
           {/* Supervisor (for HS credit) */}
           <div className={`grid grid-cols-1 sm:grid-cols-2 gap-4 transition-opacity ${creditType === 'high-school' ? 'opacity-100' : 'opacity-50'}`}>
             <div>
-              <label htmlFor="log-sup-name" className="block text-base font-semibold text-slate-700 mb-1">
+              <label htmlFor="log-sup-name" className="block text-base font-semibold text-warm-700 mb-1">
                 {tr.hours.form.supervisorName}{creditType === 'high-school' && <span className="text-red-600"> *</span>}
               </label>
               <input
@@ -219,7 +219,7 @@ export default function HoursLogger() {
               {errors.supervisorName && <p className="text-red-600 text-sm mt-1">{errors.supervisorName}</p>}
             </div>
             <div>
-              <label htmlFor="log-sup-email" className="block text-base font-semibold text-slate-700 mb-1">
+              <label htmlFor="log-sup-email" className="block text-base font-semibold text-warm-700 mb-1">
                 {tr.hours.form.supervisorEmail}
               </label>
               <input
@@ -235,7 +235,7 @@ export default function HoursLogger() {
 
           <button
             type="submit"
-            className="w-full bg-green-700 hover:bg-green-800 text-white font-bold py-3.5 px-6 rounded-xl text-lg transition-colors"
+            className="w-full bg-forest-700 hover:bg-forest-800 text-white font-bold py-3.5 px-6 rounded-xl text-lg transition-colors"
           >
             ✅ {tr.hours.form.submit}
           </button>
@@ -251,11 +251,11 @@ export default function HoursLogger() {
       {/* History */}
       <section aria-labelledby="log-history-title" className="print-section">
         <div className="flex items-center justify-between flex-wrap gap-3 mb-6">
-          <h2 id="log-history-title" className="text-2xl font-bold text-slate-900">{tr.hours.history.title}</h2>
+          <h2 id="log-history-title" className="text-2xl font-bold text-warm-900">{tr.hours.history.title}</h2>
           {logs.length > 0 && (
             <button
               onClick={handlePrint}
-              className="bg-slate-800 hover:bg-slate-900 text-white font-semibold py-2 px-4 rounded-xl text-base transition-colors print:hidden"
+              className="bg-warm-800 hover:bg-warm-900 text-white font-semibold py-2 px-4 rounded-xl text-base transition-colors print:hidden"
             >
               🖨️ {tr.hours.history.print}
             </button>
@@ -269,23 +269,23 @@ export default function HoursLogger() {
               <div className="text-4xl font-extrabold">{totalHours}</div>
               <div className="text-green-200 text-sm mt-1">{tr.hours.history.total}</div>
             </div>
-            <div className="bg-indigo-700 text-white rounded-2xl p-5 text-center">
+            <div className="bg-amber-700 text-white rounded-2xl p-5 text-center">
               <div className="text-4xl font-extrabold">{hsHours}</div>
-              <div className="text-indigo-200 text-sm mt-1">{tr.hours.history.hsTotal}</div>
+              <div className="text-amber-200 text-sm mt-1">{tr.hours.history.hsTotal}</div>
             </div>
           </div>
         )}
 
         {logs.length === 0 ? (
-          <div className="bg-white rounded-2xl border border-slate-200 p-10 text-center text-slate-500 text-lg">
+          <div className="bg-white rounded-2xl border border-warm-200 p-10 text-center text-warm-500 text-lg">
             {tr.hours.history.noHours}
           </div>
         ) : (
-          <div className="bg-white rounded-2xl shadow-md border border-slate-200 overflow-hidden">
+          <div className="bg-white rounded-2xl shadow-md border border-warm-200 overflow-hidden">
             <div className="overflow-x-auto">
               <table className="w-full text-base">
                 <thead>
-                  <tr className="bg-slate-100 text-slate-700 text-left">
+                  <tr className="bg-warm-100 text-warm-700 text-left">
                     <th className="px-4 py-3 font-semibold">{tr.hours.history.date}</th>
                     <th className="px-4 py-3 font-semibold">{tr.hours.history.org}</th>
                     <th className="px-4 py-3 font-semibold">{tr.hours.history.hrs}</th>
@@ -296,18 +296,18 @@ export default function HoursLogger() {
                 </thead>
                 <tbody className="divide-y divide-slate-100">
                   {[...logs].reverse().map(log => (
-                    <tr key={log.id} className="hover:bg-slate-50 transition-colors">
-                      <td className="px-4 py-3 whitespace-nowrap text-slate-800">{log.date}</td>
-                      <td className="px-4 py-3 text-slate-800 font-medium">{log.organization}</td>
+                    <tr key={log.id} className="hover:bg-warm-50 transition-colors">
+                      <td className="px-4 py-3 whitespace-nowrap text-warm-800">{log.date}</td>
+                      <td className="px-4 py-3 text-warm-800 font-medium">{log.organization}</td>
                       <td className="px-4 py-3 text-center font-bold text-green-700">{log.hours}</td>
-                      <td className="px-4 py-3 text-slate-700 max-w-[200px]">
+                      <td className="px-4 py-3 text-warm-700 max-w-[200px]">
                         <div>{log.description}</div>
                         {log.supervisorName && (
-                          <div className="text-xs text-slate-500 mt-0.5">Supervisor: {log.supervisorName}</div>
+                          <div className="text-xs text-warm-500 mt-0.5">Supervisor: {log.supervisorName}</div>
                         )}
                       </td>
                       <td className="px-4 py-3 print:hidden">
-                        <span className={`text-xs font-semibold px-2 py-0.5 rounded-full ${log.creditType === 'high-school' ? 'bg-indigo-100 text-indigo-700' : 'bg-slate-100 text-slate-600'}`}>
+                        <span className={`text-xs font-semibold px-2 py-0.5 rounded-full ${log.creditType === 'high-school' ? 'bg-indigo-100 text-indigo-700' : 'bg-warm-100 text-warm-600'}`}>
                           {log.creditType === 'high-school' ? '🎓 HS' : '📋'}
                         </span>
                       </td>
@@ -329,7 +329,7 @@ export default function HoursLogger() {
         )}
 
         {/* Print-only header */}
-        <div className="hidden print:block mt-6 text-center text-slate-500 text-sm">
+        <div className="hidden print:block mt-6 text-center text-warm-500 text-sm">
           <p>{tr.hours.history.printNote} · {new Date().toLocaleDateString()}</p>
         </div>
       </section>

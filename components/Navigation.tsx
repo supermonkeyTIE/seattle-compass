@@ -22,17 +22,17 @@ export default function Navigation() {
   }
 
   return (
-    <nav className="bg-blue-950 text-white shadow-lg" aria-label="Main navigation">
-      <div className="max-w-6xl mx-auto px-4">
+    <nav className="bg-warm-800 text-warm-100 shadow-md" aria-label="Main navigation">
+      <div className="max-w-5xl mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link
             href="/"
-            className="flex items-center gap-2 text-white hover:text-blue-200 transition-colors"
+            className="flex items-center gap-2 hover:opacity-80 transition-opacity"
             aria-label="Seattle Compass — home"
           >
             <span className="text-2xl" aria-hidden="true">🧭</span>
-            <span className="text-xl font-bold tracking-tight">Seattle Compass</span>
+            <span className="font-heading text-xl font-bold text-white tracking-tight">Seattle Compass</span>
           </Link>
 
           {/* Desktop nav */}
@@ -41,10 +41,10 @@ export default function Navigation() {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`px-4 py-2 rounded-lg text-lg font-medium transition-colors ${
+                className={`px-4 py-2 rounded-lg text-base font-semibold transition-colors ${
                   isActive(link.href)
-                    ? 'bg-blue-700 text-white'
-                    : 'text-blue-100 hover:bg-blue-800 hover:text-white'
+                    ? 'bg-warm-700 text-white'
+                    : 'text-warm-200 hover:bg-warm-700 hover:text-white'
                 }`}
                 aria-current={isActive(link.href) ? 'page' : undefined}
               >
@@ -54,7 +54,7 @@ export default function Navigation() {
             <button
               onClick={toggleLanguage}
               aria-label={tr.nav.languageLabel}
-              className="ml-3 px-4 py-2 rounded-lg border-2 border-blue-400 text-blue-200 hover:bg-blue-800 hover:text-white font-semibold text-lg transition-colors"
+              className="ml-2 px-3 py-2 rounded-lg border border-warm-600 text-warm-300 hover:bg-warm-700 hover:text-white font-semibold text-sm transition-colors"
             >
               🌐 {tr.nav.languageToggle}
             </button>
@@ -65,7 +65,7 @@ export default function Navigation() {
             <button
               onClick={toggleLanguage}
               aria-label={tr.nav.languageLabel}
-              className="px-3 py-1.5 rounded border-2 border-blue-400 text-blue-200 text-base font-semibold"
+              className="px-2.5 py-1.5 rounded border border-warm-600 text-warm-300 text-sm font-semibold"
             >
               🌐 {tr.nav.languageToggle}
             </button>
@@ -74,14 +74,14 @@ export default function Navigation() {
               aria-expanded={menuOpen}
               aria-controls="mobile-menu"
               aria-label={menuOpen ? tr.nav.closeMenu : tr.nav.openMenu}
-              className="p-2 rounded-lg hover:bg-blue-800 transition-colors"
+              className="p-2 rounded-lg hover:bg-warm-700 transition-colors"
             >
               {menuOpen ? (
-                <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                 </svg>
               ) : (
-                <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
                 </svg>
               )}
@@ -97,10 +97,10 @@ export default function Navigation() {
                 key={link.href}
                 href={link.href}
                 onClick={() => setMenuOpen(false)}
-                className={`block px-4 py-3 rounded-lg text-xl font-medium transition-colors ${
+                className={`block px-4 py-3 rounded-lg text-lg font-semibold transition-colors ${
                   isActive(link.href)
-                    ? 'bg-blue-700 text-white'
-                    : 'text-blue-100 hover:bg-blue-800 hover:text-white'
+                    ? 'bg-warm-700 text-white'
+                    : 'text-warm-200 hover:bg-warm-700 hover:text-white'
                 }`}
                 aria-current={isActive(link.href) ? 'page' : undefined}
               >

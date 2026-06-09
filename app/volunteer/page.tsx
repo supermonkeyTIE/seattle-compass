@@ -4,46 +4,55 @@ import Link from 'next/link';
 import { useLanguage } from '@/contexts/LanguageContext';
 
 export default function VolunteerHubPage() {
-  const { tr } = useLanguage();
+  const { lang, tr } = useLanguage();
 
   const sections = [
     {
-      href: '/volunteer/opportunities',
-      emoji: '📋',
-      title: tr.volunteer.hubOpportunitiesTitle,
-      desc: tr.volunteer.hubOpportunitiesDesc,
-      cta: tr.volunteer.hubOpportunitiesCta,
-      gradient: 'from-green-700 to-green-900',
-      textColor: 'text-green-700',
+      href:    '/volunteer/opportunities',
+      emoji:   '📋',
+      title:   tr.volunteer.hubOpportunitiesTitle,
+      desc:    tr.volunteer.hubOpportunitiesDesc,
+      cta:     tr.volunteer.hubOpportunitiesCta,
+      headerBg: 'bg-forest-700',
+      ctaStyle: 'bg-forest-700 hover:bg-forest-800 text-white',
+      textMuted: 'text-forest-100',
     },
     {
-      href: '/volunteer/hours',
-      emoji: '⏱',
-      title: tr.volunteer.hubHoursTitle,
-      desc: tr.volunteer.hubHoursDesc,
-      cta: tr.volunteer.hubHoursCta,
-      gradient: 'from-indigo-700 to-indigo-900',
-      textColor: 'text-indigo-700',
+      href:    '/volunteer/hours',
+      emoji:   '⏱',
+      title:   tr.volunteer.hubHoursTitle,
+      desc:    tr.volunteer.hubHoursDesc,
+      cta:     tr.volunteer.hubHoursCta,
+      headerBg: 'bg-amber-700',
+      ctaStyle: 'bg-amber-700 hover:bg-amber-800 text-white',
+      textMuted: 'text-amber-100',
     },
     {
-      href: '/volunteer/organizations',
-      emoji: '🏛️',
-      title: tr.volunteer.hubOrgsTitle,
-      desc: tr.volunteer.hubOrgsDesc,
-      cta: tr.volunteer.hubOrgsCta,
-      gradient: 'from-teal-700 to-teal-900',
-      textColor: 'text-teal-700',
+      href:    '/volunteer/organizations',
+      emoji:   '🏛️',
+      title:   tr.volunteer.hubOrgsTitle,
+      desc:    tr.volunteer.hubOrgsDesc,
+      cta:     tr.volunteer.hubOrgsCta,
+      headerBg: 'bg-terra-600',
+      ctaStyle: 'bg-terra-600 hover:bg-terra-700 text-white',
+      textMuted: 'text-terra-100',
     },
   ];
 
   return (
     <>
       {/* Hero */}
-      <section className="bg-gradient-to-br from-green-950 via-green-900 to-green-800 text-white py-14 px-4">
-        <div className="max-w-4xl mx-auto text-center">
-          <div className="text-6xl mb-4" aria-hidden="true">🌱</div>
-          <h1 className="text-5xl font-extrabold mb-3">{tr.volunteer.title}</h1>
-          <p className="text-xl text-green-200 max-w-xl mx-auto">{tr.volunteer.subtitle}</p>
+      <section className="bg-forest-800 text-white py-14 px-4">
+        <div className="max-w-4xl mx-auto">
+          <p className="text-forest-300 font-body font-semibold text-base uppercase tracking-widest mb-3">Seattle Compass</p>
+          <h1 className="font-heading text-5xl font-bold mb-4 text-white">
+            {lang === 'es' ? 'Haz la diferencia.' : 'Show up. Make a difference.'}
+          </h1>
+          <p className="text-forest-200 text-xl max-w-xl leading-relaxed">
+            {lang === 'es'
+              ? 'Seattle está lleno de vecinos que quieren ayudar. Únete a ellos.'
+              : 'Seattle is full of neighbors who want to help. Here\'s how to join them.'}
+          </p>
         </div>
       </section>
 
@@ -51,39 +60,59 @@ export default function VolunteerHubPage() {
       <section className="max-w-5xl mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {sections.map(s => (
-            <Link
+            <div
               key={s.href}
-              href={s.href}
-              className="group block bg-white rounded-3xl shadow-lg border border-slate-200 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-200"
+              className="bg-white border-2 border-warm-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow"
             >
-              <div className={`bg-gradient-to-br ${s.gradient} p-8 text-white`}>
-                <div className="text-5xl mb-3" aria-hidden="true">{s.emoji}</div>
-                <h2 className="text-2xl font-extrabold mb-2">{s.title}</h2>
-                <p className="text-white/80 text-base leading-snug">{s.desc}</p>
+              <div className={`${s.headerBg} px-6 py-6`}>
+                <div className="text-4xl mb-2" aria-hidden="true">{s.emoji}</div>
+                <h2 className="font-heading text-xl font-bold text-white mb-2">{s.title}</h2>
+                <p className={`${s.textMuted} text-sm leading-snug`}>{s.desc}</p>
               </div>
-              <div className="p-5 flex items-center justify-between">
-                <span className={`${s.textColor} font-bold text-lg`}>{s.cta}</span>
-                <span className={`${s.textColor} text-2xl opacity-60 group-hover:opacity-100 group-hover:translate-x-1 transition-all`}>→</span>
+              <div className="px-6 py-4">
+                <Link href={s.href} className={`inline-block font-bold px-5 py-2.5 rounded-xl text-base transition-colors ${s.ctaStyle}`}>
+                  {s.cta} →
+                </Link>
               </div>
-            </Link>
+            </div>
           ))}
         </div>
       </section>
 
       {/* Why volunteer */}
-      <section className="bg-white border-t border-slate-200 py-12 px-4">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-2xl font-bold text-slate-900 mb-8">Why Volunteer with Seattle Compass?</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 text-left">
+      <section className="bg-cream-100 border-y border-cream-200 py-12 px-4">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="font-heading text-2xl font-bold text-warm-900 mb-8 text-center">
+            {lang === 'es' ? '¿Por qué hacer voluntariado aquí?' : 'Why volunteer through Seattle Compass?'}
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             {[
-              { icon: '🎓', title: 'High School Credit', desc: 'Log hours for official high school community service credit with supervisor verification.' },
-              { icon: '🌍', title: 'Real Impact', desc: 'Work directly with organizations feeding families, sheltering neighbors, and building futures.' },
-              { icon: '🤝', title: 'Build Community', desc: 'Connect with neighbors, build skills, and become part of Seattle\'s network of care.' },
+              {
+                icon: '🎓',
+                title: lang === 'es' ? 'Crédito para preparatoria' : 'High school credit',
+                desc: lang === 'es'
+                  ? 'Registra horas con verificación del supervisor para el crédito oficial de servicio comunitario.'
+                  : 'Log hours with supervisor verification for official community service credit. Print a report anytime.',
+              },
+              {
+                icon: '🌍',
+                title: lang === 'es' ? 'Impacto real' : 'Real, tangible impact',
+                desc: lang === 'es'
+                  ? 'Trabaja directamente con organizaciones que alimentan familias, dan refugio a vecinos y construyen futuros.'
+                  : 'Work directly with the orgs feeding families, housing neighbors, and teaching skills. You\'ll see it firsthand.',
+              },
+              {
+                icon: '🤝',
+                title: lang === 'es' ? 'Comunidad genuina' : 'Genuine community',
+                desc: lang === 'es'
+                  ? 'Conoce vecinos, construye habilidades y forma parte de la red de cuidado de Seattle.'
+                  : 'Meet your neighbors, build skills, and become part of the web of care that holds Seattle together.',
+              },
             ].map(item => (
-              <div key={item.title} className="bg-slate-50 rounded-2xl p-5">
+              <div key={item.title} className="bg-white border border-warm-200 rounded-2xl p-6 shadow-sm">
                 <div className="text-4xl mb-3">{item.icon}</div>
-                <h3 className="text-lg font-bold text-slate-900 mb-1">{item.title}</h3>
-                <p className="text-slate-600 text-base">{item.desc}</p>
+                <h3 className="font-heading text-lg font-bold text-warm-900 mb-2">{item.title}</h3>
+                <p className="text-warm-600 text-base leading-relaxed">{item.desc}</p>
               </div>
             ))}
           </div>

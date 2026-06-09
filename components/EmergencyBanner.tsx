@@ -6,17 +6,17 @@ export default function EmergencyBanner() {
   const { tr } = useLanguage();
 
   return (
-    <div className="bg-red-700 text-white py-3 px-4 text-center" role="banner" aria-label="Emergency resources">
-      <p className="text-lg font-bold leading-tight">
+    <div className="bg-terra-700 text-white py-2.5 px-4 text-center" role="banner" aria-label="Emergency resources">
+      <p className="text-base font-body leading-tight">
         {tr.emergency.prefix}{' '}
         <a
           href="tel:211"
-          className="underline text-yellow-200 hover:text-yellow-100 text-2xl font-extrabold mx-1"
+          className="font-bold text-yellow-200 hover:text-yellow-100 underline underline-offset-2 text-xl mx-1"
           aria-label="Call 211 for help"
         >
           {tr.emergency.phone}
         </a>
-        {' '}{tr.emergency.suffix}
+        {' '}<span className="text-terra-200">{tr.emergency.suffix}</span>
       </p>
     </div>
   );

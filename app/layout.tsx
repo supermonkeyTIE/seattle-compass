@@ -1,21 +1,34 @@
 import type { Metadata } from 'next';
+import { Lora, Nunito } from 'next/font/google';
 import './globals.css';
 import Providers from '@/components/Providers';
 import EmergencyBanner from '@/components/EmergencyBanner';
 import Navigation from '@/components/Navigation';
 
+const lora = Lora({
+  subsets: ['latin'],
+  variable: '--font-lora',
+  display: 'swap',
+});
+
+const nunito = Nunito({
+  subsets: ['latin'],
+  variable: '--font-nunito',
+  display: 'swap',
+});
+
 export const metadata: Metadata = {
   title: {
     template: '%s | Seattle Compass',
-    default: 'Seattle Compass — Help & Volunteering in Seattle',
+    default: 'Seattle Compass — Help & Community in Seattle',
   },
-  description: 'Seattle Compass connects people in need with free local resources — food, shelter, healthcare, education, and jobs — and connects volunteers with community organizations.',
+  description: 'A free guide to food, shelter, healthcare, jobs, and volunteering in Seattle — made by neighbors, for neighbors.',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
-      <body className="min-h-screen flex flex-col">
+    <html lang="en" className={`${lora.variable} ${nunito.variable}`}>
+      <body className="min-h-screen flex flex-col bg-cream-50">
         <Providers>
           <a href="#main-content" className="skip-link">
             Skip to main content
@@ -27,36 +40,38 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <main id="main-content" className="flex-1">
             {children}
           </main>
-          <footer className="bg-blue-950 text-white py-10 px-4 mt-auto">
-            <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+
+          <footer className="bg-warm-900 text-warm-100 py-12 px-4 mt-auto">
+            <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
               <div>
                 <div className="flex items-center gap-2 mb-3">
-                  <span className="text-2xl">🧭</span>
-                  <span className="text-xl font-bold">Seattle Compass</span>
+                  <span className="text-2xl" aria-hidden="true">🧭</span>
+                  <span className="font-heading text-xl font-bold text-white">Seattle Compass</span>
                 </div>
-                <p className="text-blue-300 text-sm leading-relaxed">
-                  Connecting people in need with free local resources, and connecting volunteers with community organizations.
+                <p className="text-warm-200 text-base leading-relaxed">
+                  A community-made guide to help and opportunity in Seattle. Free to use, always.
                 </p>
               </div>
               <div>
-                <h3 className="font-bold text-lg mb-3">Emergency</h3>
-                <ul className="space-y-1 text-blue-300 text-base">
-                  <li><a href="tel:911" className="hover:text-white">🚨 Emergency: 911</a></li>
-                  <li><a href="tel:211" className="hover:text-white">📞 Crisis & Resources: 211</a></li>
-                  <li><a href="tel:988" className="hover:text-white">💙 Mental Health Crisis: 988</a></li>
+                <h3 className="font-heading font-bold text-lg text-white mb-3">If you need help now</h3>
+                <ul className="space-y-2 text-warm-200 text-base">
+                  <li><a href="tel:911" className="hover:text-white transition-colors">🚨 Emergency — call 911</a></li>
+                  <li><a href="tel:211" className="hover:text-white transition-colors">📞 Food, shelter, crisis — call 211</a></li>
+                  <li><a href="tel:988" className="hover:text-white transition-colors">💙 Mental health crisis — call 988</a></li>
                 </ul>
               </div>
               <div>
-                <h3 className="font-bold text-lg mb-3">Quick Links</h3>
-                <ul className="space-y-1 text-blue-300 text-base">
-                  <li><a href="/find-help" className="hover:text-white">Find Help</a></li>
-                  <li><a href="/volunteer" className="hover:text-white">Volunteer</a></li>
-                  <li><a href="/volunteer/hours" className="hover:text-white">Log Hours</a></li>
+                <h3 className="font-heading font-bold text-lg text-white mb-3">Explore</h3>
+                <ul className="space-y-2 text-warm-200 text-base">
+                  <li><a href="/find-help" className="hover:text-white transition-colors">Find help near you</a></li>
+                  <li><a href="/volunteer" className="hover:text-white transition-colors">Volunteer in Seattle</a></li>
+                  <li><a href="/volunteer/hours" className="hover:text-white transition-colors">Log volunteer hours</a></li>
+                  <li><a href="/volunteer/organizations" className="hover:text-white transition-colors">Meet our partners</a></li>
                 </ul>
               </div>
             </div>
-            <div className="max-w-6xl mx-auto border-t border-blue-800 mt-8 pt-4 text-blue-400 text-sm text-center">
-              © 2024 Seattle Compass · Free to use · All resources verified to the best of our ability
+            <div className="max-w-5xl mx-auto border-t border-warm-700 mt-10 pt-5 text-warm-500 text-sm text-center">
+              Made with care in Seattle · Free to use · Resources verified to the best of our ability
             </div>
           </footer>
         </Providers>
