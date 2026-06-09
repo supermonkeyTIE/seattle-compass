@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "name": "Northwest Harvest",
+    "focusArea": "Food Security",
+    "focusArea_es": "Seguridad Alimentaria",
+    "description": "Washington State's largest hunger-relief agency. Northwest Harvest operates a statewide network of food banks and partners to provide nutritious food to people in need — with dignity and respect.",
+    "description_es": "La agencia de alivio del hambre más grande del estado de Washington. Opera una red estatal de bancos de alimentos para proporcionar alimentos nutritivos a personas necesitadas con dignidad y respeto.",
+    "address": "1 S Spokane St, Seattle, WA 98108",
+    "phone": "(206) 923-7500",
+    "website": "northwestharvest.org",
+    "founded": 1967
+  },
+  {
+    "id": 2,
+    "name": "DESC — Downtown Emergency Service Center",
+    "focusArea": "Housing & Behavioral Health",
+    "focusArea_es": "Vivienda y Salud Conductual",
+    "description": "DESC provides housing, crisis services, and mental health and substance use treatment to Seattle's most vulnerable adults experiencing homelessness. Over 3,000 people served annually.",
+    "description_es": "DESC brinda vivienda, servicios de crisis y tratamiento de salud mental a los adultos más vulnerables de Seattle que experimentan falta de vivienda. Más de 3,000 personas atendidas anualmente.",
+    "address": "515 3rd Ave, Seattle, WA 98104",
+    "phone": "(206) 464-1570",
+    "website": "desc.org",
+    "founded": 1979
+  },
+  {
+    "id": 3,
+    "name": "Mary's Place",
+    "focusArea": "Family & Women's Shelter",
+    "focusArea_es": "Refugio para Familias y Mujeres",
+    "description": "Mary's Place provides safe refuge for women, children, and families experiencing homelessness. With multiple shelter sites across the Seattle area, Mary's Place offers not just a bed but pathways to stability.",
+    "description_es": "Mary's Place proporciona refugio seguro para mujeres, niños y familias sin hogar. Con múltiples sitios de refugio en el área de Seattle, ofrece no solo una cama sino caminos hacia la estabilidad.",
+    "address": "1155 N 130th St, Seattle, WA 98133",
+    "phone": "(206) 621-7990",
+    "website": "marysplaceseattle.org",
+    "founded": 1999
+  },
+  {
+    "id": 4,
+    "name": "FareStart",
+    "focusArea": "Culinary Job Training",
+    "focusArea_es": "Capacitación Culinaria Laboral",
+    "description": "FareStart transforms lives through the power of food. Their culinary job training programs serve adults facing barriers to employment, with an 85%+ job placement rate into living-wage positions.",
+    "description_es": "FareStart transforma vidas a través del poder de la comida. Sus programas de capacitación culinaria sirven a adultos con barreras de empleo, con una tasa de colocación laboral superior al 85%.",
+    "address": "700 Virginia St, Seattle, WA 98101",
+    "phone": "(206) 443-1233",
+    "website": "farestart.org",
+    "founded": 1992
+  },
+  {
+    "id": 5,
+    "name": "Year Up",
+    "focusArea": "Youth Career Development",
+    "focusArea_es": "Desarrollo Profesional para Jóvenes",
+    "description": "Year Up bridges the Opportunity Divide by providing young adults (18–24) with a combination of technical and professional skills, an internship, and college credits — in just one year.",
+    "description_es": "Year Up cierra la brecha de oportunidades brindando a jóvenes adultos (18–24) habilidades técnicas y profesionales, una pasantía y créditos universitarios, todo en un año.",
+    "address": "801 2nd Ave Suite 130, Seattle, WA 98104",
+    "phone": "(206) 264-9870",
+    "website": "yearup.org",
+    "founded": 2000
+  },
+  {
+    "id": 6,
+    "name": "Literacy Source",
+    "focusArea": "Adult Literacy & Education",
+    "focusArea_es": "Alfabetización y Educación para Adultos",
+    "description": "Literacy Source empowers adults in Seattle with the reading, writing, math, and digital skills they need to thrive. Free tutoring, GED prep, and job-skills classes for all adults.",
+    "description_es": "Literacy Source empodera a los adultos en Seattle con las habilidades de lectura, escritura, matemáticas y digitales que necesitan para prosperar. Tutoría gratuita, preparación para GED y clases.",
+    "address": "3318 Rainier Ave S, Seattle, WA 98144",
+    "phone": "(206) 782-2050",
+    "website": "literacysource.org",
+    "founded": 1985
+  },
+  {
+    "id": 7,
+    "name": "Sea Mar Community Health Centers",
+    "focusArea": "Community Health",
+    "focusArea_es": "Salud Comunitaria",
+    "description": "Sea Mar provides comprehensive healthcare and social services to diverse communities in Washington State, with a mission to improve the wellbeing of underserved populations. Bilingual care throughout.",
+    "description_es": "Sea Mar proporciona atención médica integral y servicios sociales a comunidades diversas en el estado de Washington, con una misión de mejorar el bienestar de las poblaciones desatendidas.",
+    "address": "1040 S Henderson St, Seattle, WA 98108",
+    "phone": "(206) 764-4700",
+    "website": "seamar.org",
+    "founded": 1978
+  },
+  {
+    "id": 8,
+    "name": "Refugee Women's Alliance (ReWA)",
+    "focusArea": "Refugee & Immigrant Services",
+    "focusArea_es": "Servicios para Refugiados e Inmigrantes",
+    "description": "ReWA provides comprehensive services to refugees, immigrants, and underserved communities in Washington State, including ESL, job training, case management, and family services in 20+ languages.",
+    "description_es": "ReWA brinda servicios integrales a refugiados, inmigrantes y comunidades desatendidas en Washington, incluyendo inglés, capacitación laboral, gestión de casos y servicios familiares en más de 20 idiomas.",
+    "address": "3004 Rainier Ave S, Seattle, WA 98144",
+    "phone": "(206) 721-0243",
+    "website": "rewa.org",
+    "founded": 1984
+  }
+]

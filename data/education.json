@@ -1,0 +1,80 @@
+[
+  {
+    "id": 1,
+    "name": "Literacy Source",
+    "address": "3318 Rainier Ave S, Seattle, WA 98144",
+    "phone": "(206) 782-2050",
+    "hours": "Mon–Thu 9am–7pm · Fri 9am–5pm",
+    "description": "Free adult literacy, GED prep, and basic computer skills classes. One-on-one tutoring and small group instruction. Childcare available for some classes.",
+    "description_es": "Clases gratuitas de alfabetización para adultos, preparación para el GED y habilidades informáticas básicas. Tutoría individual e instrucción en grupos pequeños. Cuidado de niños disponible para algunas clases.",
+    "neighborhood": "Rainier Valley",
+    "tags": ["Free", "GED Prep", "Computer Skills", "Childcare Available"],
+    "services": ["Adult literacy tutoring", "GED preparation", "Basic computer skills", "Job readiness"],
+    "website": "literacysource.org"
+  },
+  {
+    "id": 2,
+    "name": "Seattle Central College — Adult Basic Education",
+    "address": "1701 Broadway, Seattle, WA 98122",
+    "phone": "(206) 587-3800",
+    "hours": "Mon–Fri 8am–5pm",
+    "description": "Free and low-cost adult education including GED prep, high school completion, and ESL classes. Financial aid available. Open enrollment.",
+    "description_es": "Educación para adultos gratuita y de bajo costo, incluyendo preparación para el GED, finalización de la preparatoria y clases de inglés (ESL). Ayuda financiera disponible.",
+    "neighborhood": "Capitol Hill",
+    "tags": ["Free & Low-Cost", "GED", "High School Completion", "Financial Aid"],
+    "services": ["GED preparation", "High school completion", "ESL classes", "College prep"],
+    "website": "seattlecentral.edu"
+  },
+  {
+    "id": 3,
+    "name": "South Seattle College — ESL & Workforce",
+    "address": "6000 16th Ave SW, Seattle, WA 98106",
+    "phone": "(206) 934-5300",
+    "hours": "Mon–Fri 8am–5pm (evening classes available)",
+    "description": "Intensive English language programs (beginner to advanced), citizenship preparation, and workforce training. Day and evening classes. Bus-accessible campus.",
+    "description_es": "Programas intensivos de inglés (principiante a avanzado), preparación para la ciudadanía y capacitación laboral. Clases diurnas y nocturnas.",
+    "neighborhood": "West Seattle",
+    "tags": ["ESL", "Citizenship Prep", "Evening Classes", "Bus Accessible"],
+    "services": ["ESL levels 1–6", "Citizenship prep", "Workforce training", "GED in Spanish"],
+    "website": "southseattle.edu"
+  },
+  {
+    "id": 4,
+    "name": "Refugee Women's Alliance (ReWA)",
+    "address": "3004 Rainier Ave S, Seattle, WA 98144",
+    "phone": "(206) 721-0243",
+    "hours": "Mon–Fri 9am–5pm",
+    "description": "Comprehensive services for refugee and immigrant women and families. ESL classes, citizenship prep, digital literacy, and workforce development. 12+ languages served.",
+    "description_es": "Servicios completos para mujeres refugiadas e inmigrantes y sus familias. Clases de inglés, preparación para la ciudadanía, alfabetización digital y desarrollo laboral. Más de 12 idiomas.",
+    "neighborhood": "Rainier Valley",
+    "tags": ["Multilingual", "Refugee Services", "Women & Families", "Citizenship Prep"],
+    "services": ["ESL classes", "Citizenship prep", "Digital literacy", "Job training", "Case management"],
+    "website": "rewa.org"
+  },
+  {
+    "id": 5,
+    "name": "Washington Literacy — Tutoring Network",
+    "address": "Call for nearest tutoring location",
+    "phone": "(206) 233-9720",
+    "hours": "By appointment (flexible scheduling)",
+    "description": "Free one-on-one adult literacy tutoring. Volunteer tutors matched to learners. Meet at libraries, community centers, or online. Great for busy schedules.",
+    "description_es": "Tutoría gratuita individual de alfabetización para adultos. Tutores voluntarios emparejados con estudiantes. Reuniones en bibliotecas, centros comunitarios o en línea.",
+    "neighborhood": "Multiple Locations",
+    "tags": ["Free", "One-on-One", "Flexible Schedule", "Online Option"],
+    "services": ["Literacy tutoring", "Reading & writing", "Math skills", "Flexible scheduling"],
+    "website": "washingtonstateliteracy.org"
+  },
+  {
+    "id": 6,
+    "name": "Puget Sound Skills Center",
+    "address": "16400 Southcenter Pkwy, Seattle, WA 98188",
+    "phone": "(206) 631-7800",
+    "hours": "Mon–Fri 7:30am–3:30pm",
+    "description": "Career and technical education for adults including healthcare, construction, automotive, and digital arts. Industry-recognized certifications. Some evening programs.",
+    "description_es": "Educación técnica y profesional para adultos incluyendo salud, construcción, automotriz y artes digitales. Certificaciones reconocidas por la industria.",
+    "neighborhood": "Tukwila / Southcenter",
+    "tags": ["Vocational Training", "Certifications", "Healthcare Training", "Construction"],
+    "services": ["Healthcare certifications", "Trades training", "Digital arts", "Auto mechanics"],
+    "website": "psesd.org"
+  }
+]

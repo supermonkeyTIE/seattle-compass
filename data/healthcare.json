@@ -1,0 +1,80 @@
+[
+  {
+    "id": 1,
+    "name": "NeighborCare Health @ Pike Place",
+    "address": "1930 Post Alley, Seattle, WA 98101",
+    "phone": "(206) 682-1482",
+    "hours": "Mon–Fri 8am–5pm · Sat 9am–1pm",
+    "description": "Full-service community health clinic steps from Pike Place Market. Primary care, dental, behavioral health, and pharmacy. Sliding-scale fees — no one turned away.",
+    "description_es": "Clínica comunitaria de salud integral cerca del Pike Place Market. Atención primaria, dental, salud conductual y farmacia. Escala deslizante de honorarios: nadie es rechazado.",
+    "neighborhood": "Pike Place / Downtown",
+    "tags": ["Sliding Scale", "No Refusal", "Dental", "Mental Health"],
+    "services": ["Primary care", "Dental care", "Behavioral health", "Pharmacy", "Lab services"],
+    "website": "neighborcare.org"
+  },
+  {
+    "id": 2,
+    "name": "Sea Mar Community Health — Beacon Hill",
+    "address": "1040 S Henderson St, Seattle, WA 98108",
+    "phone": "(206) 764-4700",
+    "hours": "Mon–Fri 8am–6pm · Extended hours available",
+    "description": "Comprehensive federally-qualified health center. Primary care, OB/GYN, pediatrics, dental, behavioral health, and pharmacy. Bilingual Spanish/English staff throughout.",
+    "description_es": "Centro de salud calificado a nivel federal. Atención primaria, OB/GYN, pediatría, dental, salud conductual y farmacia. Personal bilingüe en español/inglés en todo el centro.",
+    "neighborhood": "Beacon Hill",
+    "tags": ["Spanish Services", "Sliding Scale", "Dental", "OB/GYN", "Pediatrics"],
+    "services": ["Primary care", "OB/GYN", "Pediatrics", "Dental", "Behavioral health", "Pharmacy"],
+    "website": "seamar.org"
+  },
+  {
+    "id": 3,
+    "name": "Country Doctor Community Health Centers",
+    "address": "500 19th Ave E, Seattle, WA 98112",
+    "phone": "(206) 299-1600",
+    "hours": "Mon–Thu 8am–7pm · Fri 8am–5pm · Sat 9am–1pm",
+    "description": "Community-owned health clinic on Capitol Hill. Primary care, mental health, acupuncture, and chiropractic. Sliding-scale fees based on income. All ages and identities welcome.",
+    "description_es": "Clínica de salud de propiedad comunitaria en Capitol Hill. Atención primaria, salud mental, acupuntura y quiropráctica. Honorarios según ingresos.",
+    "neighborhood": "Capitol Hill",
+    "tags": ["Sliding Scale", "Mental Health", "Acupuncture", "LGBTQ+ Welcoming"],
+    "services": ["Primary care", "Mental health counseling", "Acupuncture", "Chiropractic", "Nutrition counseling"],
+    "website": "countrydoctor.org"
+  },
+  {
+    "id": 4,
+    "name": "International Community Health Services",
+    "address": "720 8th Ave S Suite 100, Seattle, WA 98104",
+    "phone": "(206) 788-3700",
+    "hours": "Mon–Fri 8am–5pm",
+    "description": "Multilingual health center serving the Asian Pacific Islander community and all neighbors. 20+ languages. Primary care, dental, mental health. Sliding-scale fees.",
+    "description_es": "Centro de salud multilingüe que sirve a la comunidad de las Islas del Pacífico Asiático y a todos los vecinos. Más de 20 idiomas. Atención primaria, dental y salud mental.",
+    "neighborhood": "Chinatown–International District",
+    "tags": ["Multilingual (20+ Languages)", "Sliding Scale", "Asian Pacific Islander Services"],
+    "services": ["Primary care", "Dental", "Mental health", "Case management", "Health education"],
+    "website": "ichs.com"
+  },
+  {
+    "id": 5,
+    "name": "DESC Health Services",
+    "address": "515 3rd Ave, Seattle, WA 98104",
+    "phone": "(206) 464-1570",
+    "hours": "Mon–Fri 9am–5pm",
+    "description": "Healthcare specifically for people experiencing homelessness in downtown Seattle. Nurse practitioners, mental health, and substance use treatment. Street outreach available.",
+    "description_es": "Atención médica específicamente para personas sin hogar en el centro de Seattle. Enfermeros practicantes, salud mental y tratamiento de uso de sustancias. Alcance callejero disponible.",
+    "neighborhood": "Downtown",
+    "tags": ["Homeless Specific", "Free", "Mental Health", "Street Outreach"],
+    "services": ["Primary care", "Mental health", "Substance use treatment", "Street outreach", "Medication management"],
+    "website": "desc.org"
+  },
+  {
+    "id": 6,
+    "name": "Public Health Mobile Medical Van",
+    "address": "Multiple locations — call for schedule",
+    "phone": "(206) 263-9566",
+    "hours": "Varies by location — call or check website",
+    "description": "Free mobile healthcare unit that comes to you. Vaccinations, STI testing, wound care, and basic primary care. Serves encampments and community sites across Seattle.",
+    "description_es": "Unidad médica móvil gratuita que llega a usted. Vacunas, pruebas de ITS, cuidado de heridas y atención primaria básica. Sirve a campamentos y lugares comunitarios en Seattle.",
+    "neighborhood": "Citywide — Mobile",
+    "tags": ["Free", "Mobile", "No ID Required", "Vaccinations", "STI Testing"],
+    "services": ["Vaccinations", "STI testing & treatment", "Wound care", "Blood pressure checks", "Referrals"],
+    "website": "kingcounty.gov/health"
+  }
+]

@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "name": "211 — Washington 211",
+    "name_es": "211 — Washington 211",
+    "phone": "211",
+    "description": "Call or text 211 for free, confidential connection to local health and human services — food, shelter, crisis support, and more. Available 24/7 in English, Spanish, and 150+ languages.",
+    "description_es": "Llame o envíe un texto al 211 para conectarse gratuitamente con servicios de salud y humanos locales: comida, refugio, apoyo en crisis y más. Disponible 24/7 en inglés, español y más de 150 idiomas.",
+    "available": "24/7"
+  },
+  {
+    "id": 2,
+    "name": "988 Suicide & Crisis Lifeline",
+    "name_es": "Línea de Crisis y Suicidio 988",
+    "phone": "988",
+    "description": "Call or text 988 for free, confidential mental health crisis support. Trained counselors available 24/7. Now also has chat at 988lifeline.org.",
+    "description_es": "Llame o envíe un texto al 988 para obtener apoyo gratuito y confidencial en crisis de salud mental. Consejeros capacitados disponibles las 24 horas.",
+    "available": "24/7"
+  },
+  {
+    "id": 3,
+    "name": "King County Crisis Line",
+    "name_es": "Línea de Crisis del Condado de King",
+    "phone": "(866) 427-4747",
+    "description": "Local mental health crisis support for King County residents. Call for yourself or for someone you're concerned about. Available 24 hours, 7 days a week.",
+    "description_es": "Apoyo local en crisis de salud mental para residentes del Condado de King. Llame por usted mismo o por alguien que le preocupe. Disponible las 24 horas, los 7 días de la semana.",
+    "available": "24/7"
+  },
+  {
+    "id": 4,
+    "name": "National DV Hotline",
+    "name_es": "Línea Nacional Contra la Violencia Doméstica",
+    "phone": "(800) 799-7233",
+    "description": "Confidential support for anyone affected by domestic violence, including safety planning, local shelter referrals, and legal help. Call, chat, or text START to 88788.",
+    "description_es": "Apoyo confidencial para cualquier persona afectada por violencia doméstica, incluyendo planificación de seguridad, referencias de refugios locales y ayuda legal. Llame, chatee o envíe START al 88788.",
+    "available": "24/7"
+  },
+  {
+    "id": 5,
+    "name": "SARC — Sexual Assault Resource Center",
+    "name_es": "Centro de Recursos para Agresión Sexual",
+    "phone": "(888) 998-6423",
+    "description": "Free, confidential support for survivors of sexual assault and their loved ones. Crisis counseling, medical advocacy, and legal support. Serves King County.",
+    "description_es": "Apoyo gratuito y confidencial para sobrevivientes de agresión sexual y sus seres queridos. Consejería en crisis, defensa médica y apoyo legal.",
+    "available": "24/7"
+  },
+  {
+    "id": 6,
+    "name": "Trevor Project — LGBTQ+ Youth Crisis",
+    "name_es": "Proyecto Trevor — Crisis de Jóvenes LGBTQ+",
+    "phone": "(866) 488-7386",
+    "description": "Crisis intervention and suicide prevention for LGBTQ+ young people under 25. Call, text START to 678-678, or chat online. Completely confidential.",
+    "description_es": "Intervención en crisis y prevención del suicidio para jóvenes LGBTQ+ menores de 25 años. Llame, envíe START al 678-678 o chatee en línea.",
+    "available": "24/7"
+  }
+]

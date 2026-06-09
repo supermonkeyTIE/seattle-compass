@@ -1,0 +1,80 @@
+[
+  {
+    "id": 1,
+    "name": "WorkSource Seattle–King County",
+    "address": "2825 S Jackson St, Seattle, WA 98144",
+    "phone": "(206) 763-5627",
+    "hours": "Mon–Fri 8am–5pm",
+    "description": "Free employment services funded by the state. Resume writing, job search workshops, interview coaching, and connections to training programs. Walk-ins and appointments.",
+    "description_es": "Servicios de empleo gratuitos financiados por el estado. Escritura de currículum, talleres de búsqueda de empleo, entrenamiento para entrevistas y conexiones a programas de capacitación.",
+    "neighborhood": "Rainier Valley",
+    "tags": ["Free", "Walk-Ins Welcome", "Resume Help", "Job Search"],
+    "services": ["Resume writing", "Job search help", "Interview prep", "Training referrals", "Unemployment benefits help"],
+    "website": "worksourcewa.com"
+  },
+  {
+    "id": 2,
+    "name": "FareStart — Culinary Job Training",
+    "address": "700 Virginia St, Seattle, WA 98101",
+    "phone": "(206) 443-1233",
+    "hours": "Mon–Fri 8am–5pm (program enrollment)",
+    "description": "16-week paid culinary training program for adults facing barriers to employment. 85% graduate job placement rate. Includes food handler certification and job placement support.",
+    "description_es": "Programa de capacitación culinaria remunerada de 16 semanas para adultos con barreras de empleo. Tasa de colocación laboral del 85%. Incluye certificación de manipulación de alimentos.",
+    "neighborhood": "Denny Triangle",
+    "tags": ["Free Training", "Paid Stipend", "Culinary", "Job Placement"],
+    "services": ["Culinary training", "Food handler certification", "Job placement", "Life skills", "Transitional support"],
+    "website": "farestart.org"
+  },
+  {
+    "id": 3,
+    "name": "Year Up — Tech & Business Training",
+    "address": "801 2nd Ave Suite 130, Seattle, WA 98104",
+    "phone": "(206) 264-9870",
+    "hours": "Mon–Fri 9am–5pm",
+    "description": "Full-time, 6-month paid training program for young adults ages 18–24. Learn IT support, cybersecurity, data analytics, or business operations. Leads to corporate internship.",
+    "description_es": "Programa de capacitación remunerado de 6 meses a tiempo completo para jóvenes adultos de 18 a 24 años. Aprenda soporte de TI, ciberseguridad, análisis de datos u operaciones comerciales.",
+    "neighborhood": "Downtown",
+    "tags": ["Ages 18–24", "Paid Training", "Tech Skills", "Corporate Internship"],
+    "services": ["IT support training", "Data analytics", "Business skills", "Professional mentorship", "Corporate internship"],
+    "website": "yearup.org"
+  },
+  {
+    "id": 4,
+    "name": "Goodwill Job Training & Education",
+    "address": "700 S Dearborn St, Seattle, WA 98134",
+    "phone": "(206) 329-1000",
+    "hours": "Mon–Fri 8am–5pm",
+    "description": "Free job training, career counseling, and employment placement. Programs in retail, food service, warehousing, and customer service. Walk-in welcome.",
+    "description_es": "Capacitación laboral gratuita, orientación profesional y colocación laboral. Programas en venta al por menor, servicios de alimentos, almacenamiento y servicio al cliente.",
+    "neighborhood": "SoDo",
+    "tags": ["Free", "Walk-Ins Welcome", "Multiple Industries", "Career Counseling"],
+    "services": ["Career counseling", "Job training", "Resume help", "Job placement", "Financial coaching"],
+    "website": "seattlegoodwill.org"
+  },
+  {
+    "id": 5,
+    "name": "Pioneer Human Services",
+    "address": "7440 W Marginal Way S, Seattle, WA 98108",
+    "phone": "(206) 766-7663",
+    "hours": "Mon–Fri 8am–5pm",
+    "description": "Employment and transitional work programs for people with histories of criminal justice involvement, substance use, or homelessness. Paid work experience available.",
+    "description_es": "Programas de empleo y trabajo de transición para personas con historial de justicia penal, uso de sustancias o sin hogar. Experiencia laboral remunerada disponible.",
+    "neighborhood": "SoDo",
+    "tags": ["Re-entry Friendly", "Paid Work Experience", "No Criminal History Barrier"],
+    "services": ["Transitional employment", "Job training", "Substance use support", "Mental health services"],
+    "website": "pioneerhumanservices.org"
+  },
+  {
+    "id": 6,
+    "name": "ANEW — Trades Training for Women",
+    "address": "601 S Dearborn St Suite 100, Seattle, WA 98134",
+    "phone": "(425) 235-2212",
+    "hours": "Mon–Fri 8am–4pm",
+    "description": "Free 8-week pre-apprenticeship program for women and underrepresented groups entering construction trades. Hands-on training in electrical, plumbing, and carpentry. Stipend provided.",
+    "description_es": "Programa de preaprendizaje gratuito de 8 semanas para mujeres y grupos subrepresentados que ingresan a oficios de construcción. Capacitación práctica en electricidad, plomería y carpintería.",
+    "neighborhood": "SoDo",
+    "tags": ["Women", "Free Training", "Construction Trades", "Stipend Provided"],
+    "services": ["Construction trades training", "Electrical basics", "Plumbing basics", "Union apprenticeship connections"],
+    "website": "anewcareer.org"
+  }
+]
